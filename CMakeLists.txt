@@ -90,6 +90,7 @@ set(EZEEGAME_SRCS src/main.cpp
 )
 
 generate_arduino_firmware(ezeegame
+    BOARD ${ARDUINO_BOARD}
     SRCS ${EZEEGAME_SRCS}
     LIBS lib/main_lib
     LIBS lufa-core-device
